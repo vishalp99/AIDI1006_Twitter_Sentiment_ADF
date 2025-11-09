@@ -89,14 +89,14 @@ jupyter notebook sentiment_analysis.ipynb
 
 ## Technologies Used
 
-| Component           | Tool / Library                         |
-|--------------------|---------------------------------------|
-| Cloud Platform      | Microsoft Azure                        |
+| Component           | Tool / Library                          |
+|---------------------|-----------------------------------------|
+| Cloud Platform      | Microsoft Azure                         |
 | Database            | Azure SQL Database                      |
 | Data Ingestion      | Azure Data Factory                      |
 | Programming Language| Python 3                                |
 | NLP Library         | TextBlob                                |
-| Visualization       | Power BI / Matplotlib / Seaborn        |
-| IDE                 | Jupyter Notebook (Anaconda)            |
+| Visualization       | Matplotlib / Seaborn                    |
+| IDE                 | Jupyter Notebook (Anaconda)             |
 
 ---
