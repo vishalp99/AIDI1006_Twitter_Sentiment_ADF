@@ -57,3 +57,46 @@ jupyter notebook sentiment_analysis.ipynb
 ```
 
 ---
+## Steps Performed
+
+### 1️ Data Acquisition
+- Used a Twitter sentiment dataset from Kaggle.  
+- Data was cleaned and stored in **Azure SQL Database** using **Azure Data Factory (ADF) pipelines**.
+
+### 2️ Data Processing
+- Connected to Azure SQL using `pyodbc` in **Jupyter Notebook (Anaconda)**.  
+- Loaded tweets and applied **TextBlob** for sentiment classification.  
+- Generated a new column `textblob_category`:
+  - `1` → Positive  
+  - `0` → Neutral  
+  - `-1` → Negative
+
+### 3️ Data Storage
+- Created a new SQL table `dbo.twitter_results` to store analyzed results.  
+- Used Python scripts to insert processed data back into the database.
+
+### 4️ Visualization
+- Built dashboards in **Power BI** showing:
+  - Distribution of Positive, Neutral, and Negative tweets  
+  - Comparison between original and TextBlob sentiments  
+  - Word clouds for each sentiment category
+
+### 5️ Evaluation
+- Compared TextBlob sentiment results with original labels from the dataset.  
+- Discussed performance limitations due to the short-text nature of tweets.
+
+---
+
+## Technologies Used
+
+| Component           | Tool / Library                         |
+|--------------------|---------------------------------------|
+| Cloud Platform      | Microsoft Azure                        |
+| Database            | Azure SQL Database                      |
+| Data Ingestion      | Azure Data Factory                      |
+| Programming Language| Python 3                                |
+| NLP Library         | TextBlob                                |
+| Visualization       | Power BI / Matplotlib / Seaborn        |
+| IDE                 | Jupyter Notebook (Anaconda)            |
+
+---
